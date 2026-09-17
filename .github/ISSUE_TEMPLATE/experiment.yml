@@ -1,0 +1,25 @@
+name: 实验运行问题
+description: 提交最小复现与运行环境
+title: "[实验] "
+labels: [bug]
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 系统、Python、torch、其他相关依赖版本，CPU 或 GPU。
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: 运行命令与改动
+      description: 包含种子和参数，不要粘贴访问令牌。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期、实际结果与完整报错
+    validations:
+      required: true

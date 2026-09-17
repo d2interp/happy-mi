@@ -1,0 +1,23 @@
+{
+  "name": "happy-mi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress docs --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "check": "node scripts/check-content.mjs",
+    "test:web": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "markdown-it-mathjax3": "4.3.2",
+    "vitepress": "1.6.4"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12",
+    "esbuild": "0.25.12",
+    "vite": "6.4.3"
+  }
+}

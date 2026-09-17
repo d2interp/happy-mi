@@ -1,0 +1,23 @@
+name: 教程勘误或阅读反馈
+description: 报告概念、公式、引用或不易理解的段落
+title: "[勘误] "
+labels: [documentation]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 章节或页面链接
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 原文与问题
+      description: 哪句话需要更正，或你在哪里失去了理解？
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议与依据
+      description: 如有论文、推导或反例，请附上。

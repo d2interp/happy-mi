@@ -1,0 +1,485 @@
+{
+  "recorded_at": "2026-09-17T21:04:46.482924+00:00",
+  "kind": "pretrained_residual_patching",
+  "model": "openai-community/gpt2",
+  "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "device": "cpu",
+  "dtype": "float32",
+  "python": "3.11.15",
+  "torch": "2.8.0",
+  "transformers": "4.56.2",
+  "seed": 42,
+  "patch_site": "block output, last input token, entire residual vector",
+  "scope": "4 name pairs, one template; exploratory teaching example",
+  "mean_clean_logit_difference": 2.4121837615966797,
+  "mean_corrupted_logit_difference": -2.638814926147461,
+  "pairs": [
+    {
+      "clean_text": "When Mary and John went to the store, John gave a drink to",
+      "corrupted_text": "When Mary and John went to the store, Mary gave a drink to",
+      "tokens": [
+        "When",
+        "ĠMary",
+        "Ġand",
+        "ĠJohn",
+        "Ġwent",
+        "Ġto",
+        "Ġthe",
+        "Ġstore",
+        ",",
+        "ĠJohn",
+        "Ġgave",
+        "Ġa",
+        "Ġdrink",
+        "Ġto"
+      ],
+      "correct_token_id": 5335,
+      "wrong_token_id": 1757,
+      "clean_logit_difference": 2.0063705444335938,
+      "corrupted_logit_difference": -1.7888565063476562,
+      "clean_prefers_io_over_subject": true,
+      "baseline_gap": 3.79522705078125,
+      "final_patch_max_logit_error": 0.0,
+      "layers": [
+        {
+          "layer_zero_based": 0,
+          "patched_logit_difference": -1.7852401733398438,
+          "recovery": 0.0009528634148694939,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 1,
+          "patched_logit_difference": -1.7748641967773438,
+          "recovery": 0.0036868175166047505,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 2,
+          "patched_logit_difference": -1.77728271484375,
+          "recovery": 0.003049564979656165,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 3,
+          "patched_logit_difference": -1.7760238647460938,
+          "recovery": 0.003381257940528457,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 4,
+          "patched_logit_difference": -1.7930145263671875,
+          "recovery": -0.0010955919010630258,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 5,
+          "patched_logit_difference": -1.7762985229492188,
+          "recovery": 0.00330888856724723,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 6,
+          "patched_logit_difference": -1.6396255493164062,
+          "recovery": 0.03932069281613355,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 7,
+          "patched_logit_difference": -0.31365966796875,
+          "recovery": 0.3886979141538412,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 8,
+          "patched_logit_difference": 1.9857559204101562,
+          "recovery": 0.9945682764831701,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 9,
+          "patched_logit_difference": 2.073760986328125,
+          "recovery": 1.0177566298386966,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 10,
+          "patched_logit_difference": 2.0042037963867188,
+          "recovery": 0.9994290860552258,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 11,
+          "patched_logit_difference": 2.0063705444335938,
+          "recovery": 1.0,
+          "self_patch_max_logit_error": 0.0
+        }
+      ]
+    },
+    {
+      "clean_text": "When Alice and Bob went to the store, Bob gave a drink to",
+      "corrupted_text": "When Alice and Bob went to the store, Alice gave a drink to",
+      "tokens": [
+        "When",
+        "ĠAlice",
+        "Ġand",
+        "ĠBob",
+        "Ġwent",
+        "Ġto",
+        "Ġthe",
+        "Ġstore",
+        ",",
+        "ĠBob",
+        "Ġgave",
+        "Ġa",
+        "Ġdrink",
+        "Ġto"
+      ],
+      "correct_token_id": 14862,
+      "wrong_token_id": 5811,
+      "clean_logit_difference": 2.772369384765625,
+      "corrupted_logit_difference": -2.7462921142578125,
+      "clean_prefers_io_over_subject": true,
+      "baseline_gap": 5.5186614990234375,
+      "final_patch_max_logit_error": 0.0,
+      "layers": [
+        {
+          "layer_zero_based": 0,
+          "patched_logit_difference": -2.7643814086914062,
+          "recovery": -0.0032778409106619,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 1,
+          "patched_logit_difference": -2.7834548950195312,
+          "recovery": -0.006734020698369513,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 2,
+          "patched_logit_difference": -2.7908401489257812,
+          "recovery": -0.0080722535121699,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 3,
+          "patched_logit_difference": -2.809112548828125,
+          "recovery": -0.011383273748793794,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 4,
+          "patched_logit_difference": -2.844940185546875,
+          "recovery": -0.017875361862023775,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 5,
+          "patched_logit_difference": -2.8138351440429688,
+          "recovery": -0.012239023864230198,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 6,
+          "patched_logit_difference": -2.704132080078125,
+          "recovery": 0.007639539802748907,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 7,
+          "patched_logit_difference": -1.2250518798828125,
+          "recovery": 0.27565384009223853,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 8,
+          "patched_logit_difference": 1.728912353515625,
+          "recovery": 0.8109220811179221,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 9,
+          "patched_logit_difference": 2.0554351806640625,
+          "recovery": 0.8700891141396463,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 10,
+          "patched_logit_difference": 2.31866455078125,
+          "recovery": 0.9177871601538414,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 11,
+          "patched_logit_difference": 2.772369384765625,
+          "recovery": 1.0,
+          "self_patch_max_logit_error": 0.0
+        }
+      ]
+    },
+    {
+      "clean_text": "When Sarah and James went to the store, James gave a drink to",
+      "corrupted_text": "When Sarah and James went to the store, Sarah gave a drink to",
+      "tokens": [
+        "When",
+        "ĠSarah",
+        "Ġand",
+        "ĠJames",
+        "Ġwent",
+        "Ġto",
+        "Ġthe",
+        "Ġstore",
+        ",",
+        "ĠJames",
+        "Ġgave",
+        "Ġa",
+        "Ġdrink",
+        "Ġto"
+      ],
+      "correct_token_id": 10490,
+      "wrong_token_id": 3700,
+      "clean_logit_difference": 1.9049224853515625,
+      "corrupted_logit_difference": -3.7022781372070312,
+      "clean_prefers_io_over_subject": true,
+      "baseline_gap": 5.607200622558594,
+      "final_patch_max_logit_error": 0.0,
+      "layers": [
+        {
+          "layer_zero_based": 0,
+          "patched_logit_difference": -3.7048873901367188,
+          "recovery": -0.00046533967755498016,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 1,
+          "patched_logit_difference": -3.689361572265625,
+          "recovery": 0.002303567468130355,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 2,
+          "patched_logit_difference": -3.6777114868164062,
+          "recovery": 0.004381268309143381,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 3,
+          "patched_logit_difference": -3.6875228881835938,
+          "recovery": 0.0026314822701500925,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 4,
+          "patched_logit_difference": -3.7146453857421875,
+          "recovery": -0.002205601220224043,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 5,
+          "patched_logit_difference": -3.6898422241210938,
+          "recovery": 0.002217847001212332,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 6,
+          "patched_logit_difference": -3.4468536376953125,
+          "recovery": 0.045552944634102865,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 7,
+          "patched_logit_difference": -1.2681655883789062,
+          "recovery": 0.43410477218085114,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 8,
+          "patched_logit_difference": 1.72052001953125,
+          "recovery": 0.967113274834784,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 9,
+          "patched_logit_difference": 1.9372177124023438,
+          "recovery": 1.0057595989914918,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 10,
+          "patched_logit_difference": 1.8243865966796875,
+          "recovery": 0.9856370595430691,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 11,
+          "patched_logit_difference": 1.9049224853515625,
+          "recovery": 1.0,
+          "self_patch_max_logit_error": 0.0
+        }
+      ]
+    },
+    {
+      "clean_text": "When Anna and David went to the store, David gave a drink to",
+      "corrupted_text": "When Anna and David went to the store, Anna gave a drink to",
+      "tokens": [
+        "When",
+        "ĠAnna",
+        "Ġand",
+        "ĠDavid",
+        "Ġwent",
+        "Ġto",
+        "Ġthe",
+        "Ġstore",
+        ",",
+        "ĠDavid",
+        "Ġgave",
+        "Ġa",
+        "Ġdrink",
+        "Ġto"
+      ],
+      "correct_token_id": 11735,
+      "wrong_token_id": 3271,
+      "clean_logit_difference": 2.9650726318359375,
+      "corrupted_logit_difference": -2.3178329467773438,
+      "clean_prefers_io_over_subject": true,
+      "baseline_gap": 5.282905578613281,
+      "final_patch_max_logit_error": 0.0,
+      "layers": [
+        {
+          "layer_zero_based": 0,
+          "patched_logit_difference": -2.3212814331054688,
+          "recovery": -0.0006527631957090929,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 1,
+          "patched_logit_difference": -2.31390380859375,
+          "recovery": 0.0007437456765269532,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 2,
+          "patched_logit_difference": -2.347686767578125,
+          "recovery": -0.005651022975242656,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 3,
+          "patched_logit_difference": -2.3382797241210938,
+          "recovery": -0.0038703658506645333,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 4,
+          "patched_logit_difference": -2.3860397338867188,
+          "recovery": -0.012910847277963032,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 5,
+          "patched_logit_difference": -2.4054107666015625,
+          "recovery": -0.016577585671559023,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 6,
+          "patched_logit_difference": -2.2909469604492188,
+          "recovery": 0.0050892422603514235,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 7,
+          "patched_logit_difference": -0.4217987060546875,
+          "recovery": 0.3588998918319395,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 8,
+          "patched_logit_difference": 2.8966445922851562,
+          "recovery": 0.9870472718975335,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 9,
+          "patched_logit_difference": 3.1329803466796875,
+          "recovery": 1.0317832132990392,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 10,
+          "patched_logit_difference": 2.8782730102539062,
+          "recovery": 0.9835697192973841,
+          "self_patch_max_logit_error": 0.0
+        },
+        {
+          "layer_zero_based": 11,
+          "patched_logit_difference": 2.9650726318359375,
+          "recovery": 1.0,
+          "self_patch_max_logit_error": 0.0
+        }
+      ]
+    }
+  ],
+  "aggregate": [
+    {
+      "layer_zero_based": 0,
+      "mean_patched_logit_difference": -2.6439476013183594,
+      "ratio_of_mean_differences": -0.0010161703631704514
+    },
+    {
+      "layer_zero_based": 1,
+      "mean_patched_logit_difference": -2.6403961181640625,
+      "ratio_of_mean_differences": -0.0003130454221732829
+    },
+    {
+      "layer_zero_based": 2,
+      "mean_patched_logit_difference": -2.6483802795410156,
+      "ratio_of_mean_differences": -0.0018937548759939853
+    },
+    {
+      "layer_zero_based": 3,
+      "mean_patched_logit_difference": -2.6527347564697266,
+      "ratio_of_mean_differences": -0.002755857045863231
+    },
+    {
+      "layer_zero_based": 4,
+      "mean_patched_logit_difference": -2.684659957885742,
+      "ratio_of_mean_differences": -0.009076429152421022
+    },
+    {
+      "layer_zero_based": 5,
+      "mean_patched_logit_difference": -2.671346664428711,
+      "ratio_of_mean_differences": -0.006440654668983732
+    },
+    {
+      "layer_zero_based": 6,
+      "mean_patched_logit_difference": -2.5203895568847656,
+      "ratio_of_mean_differences": 0.0234459315046043
+    },
+    {
+      "layer_zero_based": 7,
+      "mean_patched_logit_difference": -0.8071689605712891,
+      "ratio_of_mean_differences": 0.36263045762029594
+    },
+    {
+      "layer_zero_based": 8,
+      "mean_patched_logit_difference": 2.082958221435547,
+      "ratio_of_mean_differences": 0.9348197137805692
+    },
+    {
+      "layer_zero_based": 9,
+      "mean_patched_logit_difference": 2.2998485565185547,
+      "ratio_of_mean_differences": 0.9777598031552259
+    },
+    {
+      "layer_zero_based": 10,
+      "mean_patched_logit_difference": 2.2563819885253906,
+      "ratio_of_mean_differences": 0.9691542637994878
+    },
+    {
+      "layer_zero_based": 11,
+      "mean_patched_logit_difference": 2.4121837615966797,
+      "ratio_of_mean_differences": 1.0
+    }
+  ],
+  "elapsed_seconds": 29.735681499994826
+}

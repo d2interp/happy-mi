@@ -22,7 +22,7 @@ Happy MI：动手学机制可解释性，是 d2interp 社区维护的中文教�
 
 ## 许可证
 
-教程正文、Notebook 文字和原创图示采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，要求署名、非商业使用、以相同方式共享，并标明修改。可执行代码单独采用 MIT；第三方材料保持原许可。完整范围见仓库 `LICENSE` 和 `LICENSE-CODE`。
+教程正文、Notebook 文字和原创图示采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，要求署名、非商业使用、以相同方式共享，并标明修改。可执行代码单独采用 MIT；第三方材料保持原许可。适用范围见仓库 `LICENSES.md`，完整文本见 `LICENSE` 和 `LICENSE-CODE`。
 
 ## 版本与勘误
 

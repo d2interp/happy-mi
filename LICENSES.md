@@ -1,0 +1,27 @@
+Happy MI — content license
+
+Copyright (c) 2026 Happy MI contributors.
+
+Except where otherwise noted, the original tutorial prose, diagrams, and
+educational content in this repository are licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).
+
+License deed: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Full legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+An unmodified copy of the legal code is included in LICENSE.
+
+Original executable code (including code blocks in the tutorial, Python files,
+notebook code cells, JavaScript/TypeScript/Vue/CSS, and build configuration) is
+licensed separately under the MIT license in LICENSE-CODE.
+Notebook Markdown cells and original diagrams remain under CC BY-NC-SA 4.0.
+
+Third-party materials retain their own licenses. Links to third-party resources
+do not imply that those resources are covered by this repository's licenses.
+
+Suggested attribution:
+Happy MI contributors, Happy MI: 动手学机制可解释性,
+https://github.com/d2interp/happy-mi, CC BY-NC-SA 4.0.
+
+中文说明：除另有声明外，本教程正文与原创图示采用 CC BY-NC-SA 4.0。
+再分发或改编须署名、标明修改、限非商业用途，并以相同协议共享。
+可执行代码采用独立的 MIT 协议，具体范围如上。此说明不代替完整法律文本。

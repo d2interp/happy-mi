@@ -32,4 +32,4 @@ python -m experiments.run_all
 
 ## 许可
 
-贡献正文、Notebook 文字与原创图示时，同意以 CC BY-NC-SA 4.0 发布；贡献可执行代码时，同意以 MIT 发布。你应拥有贡献内容的相关权利，并保留第三方署名与许可说明。详细范围见 `LICENSE` 与 `LICENSE-CODE`。
+贡献正文、Notebook 文字与原创图示时，同意以 CC BY-NC-SA 4.0 发布；贡献可执行代码时，同意以 MIT 发布。你应拥有贡献内容的相关权利，并保留第三方署名与许可说明。适用范围见 `LICENSES.md`，完整文本见 `LICENSE` 与 `LICENSE-CODE`。

@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.SITE_BASE || '/happy-mi/'
+
 export const chapters = [
   ['01-question', '1. 我们想解释什么'],
   ['02-first-experiment', '2. 第一个因果实验'],
@@ -19,9 +21,12 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Happy MI',
   description: '动手学机制可解释性：面向零基础读者的中文教程，结合原理、代码与实验。',
-  base: process.env.SITE_BASE || '/happy-mi/',
+  base,
   cleanUrls: false,
-  head: [['meta', { name: 'theme-color', content: '#2359a8' }]],
+  head: [
+    ['meta', { name: 'theme-color', content: '#2359a8' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}mark.svg` }]
+  ],
   markdown: { math: true, lineNumbers: true },
   lastUpdated: true,
   themeConfig: {

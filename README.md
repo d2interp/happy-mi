@@ -57,4 +57,4 @@ npm run docs:build
 
 参考 [D2L](https://d2l.ai/)、[Happy LLM](https://github.com/datawhalechina/happy-llm)、[Learn Mechanistic Interpretability](https://github.com/FlyingPumba/learn-mech-interp) 的教材与导航组织，以及 [Neel Nanda Quickstart](https://www.neelnanda.io/mechanistic-interpretability/quickstart-old) 从具体问题出发的学习方式。原始学术来源列在各章。
 
-正文、Notebook 文字与原创图示采用 **[CC BY-NC-SA 4.0](LICENSE)**；可执行代码采用 **[MIT](LICENSE-CODE)**。引用的第三方材料保留各自许可。
+正文、Notebook 文字与原创图示采用 **[CC BY-NC-SA 4.0](LICENSE)**；可执行代码采用 **[MIT](LICENSE-CODE)**。适用范围见 [LICENSES.md](LICENSES.md)，引用的第三方材料保留各自许可。
